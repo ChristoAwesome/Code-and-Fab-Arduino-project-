@@ -1,7 +1,13 @@
 void setup() {
 serial.begin(9600); 
+
+// add button code for setup
+// add led code for setup
 }
 
 void loop() {
+
+// continue button code
+// continue led code
 
 }
