@@ -1,3 +1,15 @@
+#include <Servo.h>
+
+
+Servo servo1;
+Servo servo2;
+
+// Arduino pin assignments (TEMPORARY)
+const int switchPin = 2;
+const int servo1Pin = 9;
+const int servo2Pin = 10;
+
+
 void setup() {
 serial.begin(9600); 
 
