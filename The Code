@@ -1,7 +1,36 @@
-void setup() {
+#include <Servo.h>
 
+
+Servo servo1;
+Servo servo2;
+
+// Arduino pin assignments (TEMPORARY)
+const int switchPin = 2;
+const int servo1Pin = 9;
+const int servo2Pin = 10;
+
+// Variables for Switch
+int lastSwitchState = HIGH;
+bool fireActive = false;
+
+// Variables for Servo Movement
+int servoPosition = 0;
+unsigned long previousMillis = 0;
+
+const unsigned long movementInterval = 500;
+
+void setup() {
+  pinMode(switchPin, INPUT_PULLUP);
+
+  servo1.attach(servo1Pin);
+  servo2.attach(servo2Pin);
+  servo1.write(0);
+  servo2.write(0);
 }
 
 void loop() {
+
+// continue button code
+// continue led code
 
 }
